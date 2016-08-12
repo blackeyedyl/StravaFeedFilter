@@ -7,11 +7,14 @@
   "default_locale": "en",
   "description": "Filter your activity feed by sport, or tag.",
 
-
   "content_scripts": [
   {
     "matches": [
       "https://www.strava.com/*"
     ],
+    
+    "js": [
+      "src/inject/inject.js"
+      ]
   }],
 }
